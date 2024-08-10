@@ -1,0 +1,27 @@
+@import 'mixins';
+@import 'fonts';
+@import 'icons';
+
+$fontfamily: 'Gilroy';
+$fontSize: 16;
+
+$minwidth: 320px;
+$maxWidth: 1440;
+$maxWidthContainer: 1270;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$mainColor: #3A3A3A;
+$orangeColor: #e89f71;
+$grayColor: #898989;
+$darkGrayColor: #616161;
+
+@import 'normalizer';
+@import 'ibg';
+@import 'style';
+@import 'header';
+@import 'footer';
+@import 'homepage';
+@import 'baguetteBox';

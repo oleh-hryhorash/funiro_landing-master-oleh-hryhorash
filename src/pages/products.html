@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" type="image/x-icon" href="<%= require('../assets/favicon.ico') %>">
+    <title>Funiro</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <%= require('../partials/header.html?raw') %>
+
+        <!-- main -->
+        <main class="page-products">
+            <div class="page-products__wrapper">
+                <div class="page-products__container container">
+                    <h2 class="page-products__title _section-title">Our Products</h2>
+                    <div class="page-products__filter filter-products">
+                        <div class="filter-products__title"></div>
+                        <div class="filter-products__arrow _icon-arrow-down"></div>
+                        <div class="filter-products__subtitle"></div>
+                    </div>
+                    <div class="products__items page-products__items"></div>
+                </div>
+            </div>  
+        </main>
+        
+
+        <!-- footer -->
+        <%= require('../partials/footer.html?raw') %>
+    </div>
+</body>
+</html>

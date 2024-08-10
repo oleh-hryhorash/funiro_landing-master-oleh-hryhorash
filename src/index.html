@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta property="og:title" content="Funiro">
+    <meta property="og:image" content="<%= require('./assets/images/main-slider/01.jpg') %>">
+    <link rel="icon" type="image/x-icon" href="<%= require('./assets/favicon.ico') %>">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <%= require('partials/header.html?raw') %>
+
+      <!-- main -->
+      <main class="page">
+        <section class="page__main-slider main-slider">
+          <div class="main-slider__container container">
+            <div class="main-slider__body">
+              <div class="main-slider__content content-main">
+                <h1 class="content-main__title">High-Quality Furniture Just For You</h1>
+                <div class="content-main__text">Our furniture is made from selected and best quality materials that are suitable for your dream home</div>
+                <a href="#products" class="content-main__button">Shop Now</a>
+              </div>
+              <div class="main-slider__slider slider-main">
+                <div class="slider-main__controls controls-slider-main">
+                  <div class="controls-slider-main__dotts"></div>
+                  <div class="controls-slider-main__arrows slider-arrows">
+                    <button type="button" class="slider-arrow slider-arrow_prev _icon-arrow-down"></button>
+                    <button type="button" class="slider-arrow slider-arrow_next _icon-arrow-down"></button>
+                  </div>
+                </div>
+                <div class="slider-main__body _swiper">
+                  <div class="slider-main__slide">
+                    <div class="slider-main__image ibg">
+                      <img src="<%= require('./assets/images/main-slider/01.jpg') %>" alt="Slider">
+                    </div>
+                    <a href="products.html"  data-room="living" data-pid="9" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slider-main__content">
+                      <div class="slider-main__title">Bohauss</div>
+                      <div class="slider-main__text">Luxury big sofa 2-seat</div>
+                      <div class="slider-main__price _icon-arrow-link">$ 2.000</div>
+                    </a>
+                  </div>
+                  <div class="slider-main__slide">
+                    <div class="slider-main__image ibg">
+                      <img src="<%= require('./assets/images/main-slider/02.jpg') %>" alt="Slider">
+                    </div>
+                    <a href="products.html"  data-room="bedroom" data-pid="10" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slider-main__content">
+                      <div class="slider-main__title">Sirius</div>
+                      <div class="slider-main__text">Luxury king size bed</div>
+                      <div class="slider-main__price _icon-arrow-link">$ 1.145</div>
+                    </a>
+                  </div>
+                  <div class="slider-main__slide">
+                    <div class="slider-main__image ibg">
+                      <img src="<%= require('./assets/images/main-slider/03.jpg') %>" alt="Slider">
+                    </div>
+                    <a href="products.html" data-room="living" data-pid="11" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slider-main__content">
+                      <div class="slider-main__title">Nicola</div>
+                      <div class="slider-main__text">Luxury big sofa 2-seat</div>
+                      <div class="slider-main__price _icon-arrow-link">$ 1.000</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__advatages advantages">
+          <div class="advantages__container container">
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <img src="<%= require('./assets/images/advantages/01.svg') %>" alt="icon">
+              </div>
+              <h4 class="advantages__title">High Quality</h4>
+              <div class="advantages__text">crafted from top materials</div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <img src="<%= require('./assets/images/advantages/02.svg') %>" alt="icon">
+              </div>
+              <h4 class="advantages__title">Warrany Protection</h4>
+              <div class="advantages__text">Over 2 years</div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <img src="<%= require('./assets/images/advantages/03.svg') %>" alt="icon">
+              </div>
+              <h4 class="advantages__title">Free Shipping</h4>
+              <div class="advantages__text">Order over 150 $</div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__icon">
+                <img src="<%= require('./assets/images/advantages/04.svg') %>" alt="icon">
+              </div>
+              <h4 class="advantages__title">24 / 7 Support</h4>
+              <div class="advantages__text">Dedicated support</div>
+            </div>
+          </div>
+        </section>
+        <section class="page__products products" id="products">
+          <div class="products__container container">
+            <h2 class="products__title _section-title">Our Products</h2>
+            <div class="products__items">
+              <article data-pid="1" class="products__item item-product">
+                <div class="item-product__labels">
+                  <div class="item-product__label item-product__label_sale">-30%</div>
+                </div>
+                <a href="" class="item-product__image ibg">
+                  <img src="<%= require('./assets/images/products/01.jpg') %>" alt="item">
+                </a>
+                <div class="item-product__body">
+                  <div class="item-product__content">
+                    <h5 class="item-product__title">Syltherine</h5>
+                    <div class="item-product__text">Stylish cafe chair</div>
+                  </div>
+                  <div class="item-product__prices">
+                    <div class="item-product__price">$ 245</div>
+                    <div class="item-product__price item-product__price_old">$ 350</div>
+                  </div>
+                  <div class="item-product__actions actions-product">
+                    <div class="actions-product__body">
+                      <!-- <a href="" class="actions-product__button btn_orange">Quickview</a> -->
+                      <a href="" class="actions-product__button btn_white">Add to cart</a>
+                      <a href="" class="actions-product__link _icon-share">Share</a>
+                      <a href="" class="actions-product__link _icon-favorite">Like</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article data-pid="2" class="products__item item-product">
+                <div class="item-product__labels">
+                  <div class="item-product__label item-product__label_sale">-30%</div>
+                </div>
+                <a href="" class="item-product__image ibg">
+                  <img src="<%= require('./assets/images/products/02.jpg') %>" alt="item">
+                </a>
+                <div class="item-product__body">
+                  <div class="item-product__content">
+                    <h5 class="item-product__title">Leviosa</h5>
+                    <div class="item-product__text">Stylish cafe chair</div>
+                  </div>
+                  <div class="item-product__prices">
+                    <div class="item-product__price">$ 175</div>
+                    <div class="item-product__price item-product__price_old">$ 250</div>
+                  </div>
+                  <div class="item-product__actions actions-product">
+                    <div class="actions-product__body">
+                      <!-- <a href="" class="actions-product__button btn_orange">Quickview</a> -->
+                      <a href="" class="actions-product__button btn_white">Add to cart</a>
+                      <a href="" class="actions-product__link _icon-share">Share</a>
+                      <a href="" class="actions-product__link _icon-favorite">Like</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article data-pid="3" class="products__item item-product">
+                <div class="item-product__labels">
+                  <div class="item-product__label item-product__label_sale">-50%</div>
+                </div>
+                <a href="" class="item-product__image ibg">
+                  <img src="<%= require('./assets/images/products/03.jpg') %>" alt="item">
+                </a>
+                <div class="item-product__body">
+                  <div class="item-product__content">
+                    <h5 class="item-product__title">Lolito</h5>
+                    <div class="item-product__text">Luxury big sofa</div>
+                  </div>
+                  <div class="item-product__prices">
+                    <div class="item-product__price">$ 2.250</div>
+                    <div class="item-product__price item-product__price_old">$ 4.500</div>
+                  </div>
+                  <div class="item-product__actions actions-product">
+                    <div class="actions-product__body">
+                      <!-- <a href="" class="actions-product__button btn_orange">Quickview</a> -->
+                      <a href="" class="actions-product__button btn_white">Add to cart</a>
+                      <a href="" class="actions-product__link _icon-share">Share</a>
+                      <a href="" class="actions-product__link _icon-favorite">Like</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article data-pid="4" class="products__item item-product">
+                <div class="item-product__labels">
+                  <div class="item-product__label item-product__label_new">New</div>
+                </div>
+                <a href="" class="item-product__image ibg">
+                  <img src="<%= require('./assets/images/products/04.jpg') %>" alt="item">
+                </a>
+                <div class="item-product__body">
+                  <div class="item-product__content">
+                    <h5 class="item-product__title">Respira</h5>
+                    <div class="item-product__text">Minimalist fan</div>
+                  </div>
+                  <div class="item-product__prices">
+                    <div class="item-product__price">$ 125</div>
+                    <div class="item-product__price item-product__price_old"></div>
+                  </div>
+                  <div class="item-product__actions actions-product">
+                    <div class="actions-product__body">
+                      <!-- <a href="" class="actions-product__button btn_orange">Quickview</a> -->
+                      <a href="" class="actions-product__button btn_white">Add to cart</a>
+                      <a href="" class="actions-product__link _icon-share">Share</a>
+                      <a href="" class="actions-product__link _icon-favorite">Like</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="products__footer">
+              <a href="" class="products__more btn_white">Show More</a>
+            </div>
+          </div>
+        </section>
+        <section class="page__inspiration inspiration" id="inspiration">
+          <div class="inspiration__container container">
+            <div class="inspiration__body">
+              <h2 class="inspiration__title _section-title">50+ Beautiful rooms inspiration</h2>
+              <div class="inspiration__text">Our designer already made a lot of beautiful prototipe of rooms that inspire you</div>
+              <a href="" class="inspiration__button btn_orange">Explore More</a>
+            </div>
+            <div class="inspiration__slider slider-inspiration">
+              <div class="slider-inspiration__body _swiper">
+                <div class="slider-inspiration__slide">
+                  <div class="slider-inspiration__image ibg">
+                    <img src="<%= require('./assets/images/rooms/01.jpg') %>" alt="Slider">
+                  </div>
+                  <a href="#" data-swiper-parallax-opacity="0" data-swiper-parallax-y="-100%" class="slider-inspiration__content _icon-arrow-link">
+                    <div class="slider-inspiration__label label-slider">
+                      <div class="label-slider__number">01</div>
+                      <div class="label-slider__line"></div>
+                      <div class="label-slider__text">Bedroom</div>
+                    </div>
+                    <div class="slider-inspiration__title">Inner Peace</div>
+                  </a>
+                </div>
+                <div class="slider-inspiration__slide">
+                  <div class="slider-inspiration__image ibg">
+                    <img src="<%= require('./assets/images/rooms/02.jpg') %>" alt="Slider">
+                  </div>
+                  <a href="#" data-swiper-parallax-opacity="0" data-swiper-parallax-y="-100%" class="slider-inspiration__content _icon-arrow-link">
+                    <div class="slider-inspiration__label label-slider">
+                      <div class="label-slider__number">02</div>
+                      <div class="label-slider__line"></div>
+                      <div class="label-slider__text">Dining room</div>
+                    </div>
+                    <div class="slider-inspiration__title">Natural</div>
+                  </a>
+                </div>
+                <div class="slider-inspiration__slide">
+                  <div class="slider-inspiration__image ibg">
+                    <img src="<%= require('./assets/images/rooms/03.jpg') %>" alt="Slider">
+                  </div>
+                  <a href="#" data-swiper-parallax-opacity="0" data-swiper-parallax-y="-100%" class="slider-inspiration__content _icon-arrow-link">
+                    <div class="slider-inspiration__label label-slider">
+                      <div class="label-slider__number">03</div>
+                      <div class="label-slider__line"></div>
+                      <div class="label-slider__text">Hallway</div>
+                    </div>
+                    <div class="slider-inspiration__title">Modern</div>
+                  </a>
+                </div>
+                <div class="slider-inspiration__slide">
+                  <div class="slider-inspiration__image ibg">
+                    <img src="<%= require('./assets/images/rooms/04.jpg') %>" alt="Slider">
+                  </div>
+                  <a href="#" data-swiper-parallax-opacity="0" data-swiper-parallax-y="-100%" class="slider-inspiration__content _icon-arrow-link">
+                    <div class="slider-inspiration__label label-slider">
+                      <div class="label-slider__number">04</div>
+                      <div class="label-slider__line"></div>
+                      <div class="label-slider__text">Living room</div>
+                    </div>
+                    <div class="slider-inspiration__title">Serene and stylish</div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider-inspiration__arrows slider-arrows">
+                <button type="button" class="slider-arrow slider-arrow_white slider-arrow_prev _icon-arrow-down"></button>
+                <button type="button" class="slider-arrow slider-arrow_white slider-arrow_next _icon-arrow-down"></button>
+              </div>
+              <div class="slider-inspiration__dotts"></div>
+            </div>
+          </div>
+        </section>
+        <section class="page__tips tips">
+          <div class="tips__container container">
+            <h2 class="tips__title _section-title">Tips & Tricks</h2>
+            <div class="tips__slider slider-tips">
+              <div class="slider-tips__body _swiper">
+                <div class="slider-tips__slide">
+                  <a href="" class="slider-tips__image ibg">
+                    <img src="<%= require('./assets/images/tips/04.jpg') %>" alt="Slider">
+                  </a>
+                  <div class="slider-tips__content">
+                    <a href="" class="slider-tips__title">How to create a living room to love</a>
+                    <div class="slider-tips__text">20 Jan 2023</div>
+                  </div>
+                </div>
+                <div class="slider-tips__slide">
+                  <a href="" class="slider-tips__image ibg">
+                    <img src="<%= require('./assets/images/tips/02.jpg') %>" alt="Slider">
+                  </a>
+                  <div class="slider-tips__content">
+                    <a href="" class="slider-tips__title">Solution for clean look working space</a>
+                    <div class="slider-tips__text">10 Jan 2023</div>
+                  </div>
+                </div>
+                <div class="slider-tips__slide">
+                  <a href="" class="slider-tips__image ibg">
+                    <img src="<%= require('./assets/images/tips/03.jpg') %>" alt="Slider">
+                  </a>
+                  <div class="slider-tips__content">
+                    <a href="" class="slider-tips__title">Make your cooking activity more fun with good setup</a>
+                    <div class="slider-tips__text">6 Jan 2023</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-tips__arrows slider-arrows">
+                <button type="button" class="slider-arrow slider-arrow_white slider-arrow_prev _icon-arrow-down"></button>
+                <button type="button" class="slider-arrow slider-arrow_white slider-arrow_next _icon-arrow-down"></button>
+              </div>
+              <div class="slider-tips__dotts"></div>
+            </div>
+          </div>
+        </section>
+        <section class="page__gallery gallery">
+          <div class="gallery__container">
+            <div class="gallery__label">Share your setup with</div>
+            <h2 class="gallery__title _section-title">#FuniroFurniture</h2>
+            <div data-speed="0.03" class="gallery__body">
+              <div class="gallery__items _gallery">
+                <div class="gallery__column">
+                  <div class="gallery__row row-gallery row-gallery_left-top">
+                    <a href="./assets/images/furniture/09.jpg" class="row-gallery__item">
+                      <img src="<%= require('./assets/images/furniture/09.jpg') %>" alt="Image">
+                    </a>
+                    <a href="./assets/images/furniture/01.jpg" class="row-gallery__item">
+                      <img src="<%= require('./assets/images/furniture/01.jpg') %>" alt="Image">
+                    </a>
+                    <a href="./assets/images/furniture/02.jpg" class="row-gallery__item">
+                      <img src="<%= require('./assets/images/furniture/02.jpg') %>" alt="Image">
+                    </a>
+                  </div>
+                  <div class="gallery__row row-gallery row-gallery_left-bottom">
+                    <a href="./assets/images/furniture/04.jpg" class="row-gallery__item">
+                      <img src="<%= require('./assets/images/furniture/04.jpg') %>" alt="Image">
+                    </a>
+                    <a href="./assets/images/furniture/06.jpg" class="row-gallery__item">
+                      <img src="<%= require('./assets/images/furniture/06.jpg') %>" alt="Image">
+                    </a>
+                    <a href="./assets/images/furniture/07.jpg" class="row-gallery__item">
+                      <img src="<%= require('./assets/images/furniture/07.jpg') %>" alt="Image">
+                    </a>
+                  </div>
+                </div>
+                <div class="gallery__column">
+                  <div class="gallery__row row-gallery row-gallery_center">
+                    <a href="./assets/images/furniture/03.jpg" class="row-gallery__item">
+                      <img src="<%= require('./assets/images/furniture/03.jpg') %>" alt="Image">
+                    </a>
+                  </div>
+                </div>
+                <div class="gallery__column">
+                  <div class="gallery__row row-gallery row-gallery_right-top">
+                    <a href="./assets/images/furniture/04.jpg" class="row-gallery__item">
+                      <img src="<%= require('./assets/images/furniture/04.jpg') %>" alt="Image">
+                    </a>
+                    <a href="./assets/images/furniture/05.jpg" class="row-gallery__item">
+                      <img src="<%= require('./assets/images/furniture/05.jpg') %>" alt="Image">
+                    </a>
+                    <a href="./assets/images/furniture/01.jpg" class="row-gallery__item">
+                      <img src="<%= require('./assets/images/furniture/01.jpg') %>" alt="Image">
+                    </a>
+                  </div>
+                  <div class="gallery__row row-gallery row-gallery_right-bottom">
+                    <a href="./assets/images/furniture/08.jpg" class="row-gallery__item">
+                      <img src="<%= require('./assets/images/furniture/08.jpg') %>" alt="Image">
+                    </a>
+                    <a href="./assets/images/furniture/09.jpg" class="row-gallery__item">
+                      <img src="<%= require('./assets/images/furniture/09.jpg') %>" alt="Image">
+                    </a>
+                    <a href="./assets/images/furniture/06.jpg" class="row-gallery__item">
+                      <img src="<%= require('./assets/images/furniture/06.jpg') %>" alt="Image">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <%= require('partials/footer.html?raw') %>
+    </div>
+  </body>
+</html>

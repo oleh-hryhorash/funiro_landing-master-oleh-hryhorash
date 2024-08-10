@@ -1,0 +1,197 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "url": "#",
+            "title": "Syltherine",
+            "text": "Stylish cafe chair",
+            "labels": [
+                {
+                    "type": "sale",
+                    "value": "-30%"
+                }
+            ],
+            "image": "01.jpg",
+            "price": "245",
+            "priceOld": "350",
+            "shareUrl": "",
+            "likeUrl": "",
+            "room": ["dining"]
+        },
+        {
+            "id": 2,
+            "url": "#",
+            "title": "Leviosa",
+            "text": "Stylish cafe chair",
+            "labels": [
+                {
+                    "type": "sale",
+                    "value": "-30%"
+                }
+            ],
+            "image": "02.jpg",
+            "price": "175",
+            "priceOld": "250",
+            "shareUrl": "",
+            "likeUrl": "",
+            "room": ["dining", "living"]
+        },
+        {
+            "id": 3,
+            "url": "#",
+            "title": "Lolito",
+            "text": "Luxury big sofa",
+            "labels": [
+                {
+                    "type": "sale",
+                    "value": "-50%"
+                }
+            ],
+            "image": "03.jpg",
+            "price": "2.250",
+            "priceOld": "4.500",
+            "shareUrl": "",
+            "likeUrl": "",
+            "room": ["living"]
+        },
+        {
+            "id": 4,
+            "url": "#",
+            "title": "Respira",
+            "text": "Minimalist fan",
+            "labels": [
+                {
+                    "type": "new",
+                    "value": "New"
+                }
+            ],
+            "image": "04.jpg",
+            "price": "125",
+            "priceOld": "",
+            "shareUrl": "",
+            "likeUrl": "",
+            "room": ["dining", "living"]
+        },
+        {
+            "id": 5,
+            "url": "#",
+            "title": "Grifo",
+            "text": "Night lamp",
+            "labels": [],
+            "image": "05.jpg",
+            "price": "375",
+            "priceOld": "",
+            "shareUrl": "",
+            "likeUrl": "",
+            "room": ["bedroom", "living"]
+        },
+        {
+            "id": 6,
+            "url": "#",
+            "title": "Muggo",
+            "text": "Small mug",
+            "labels": [
+                {
+                    "type": "new",
+                    "value": "New"
+                }
+            ],
+            "image": "06.jpg",
+            "price": "35",
+            "priceOld": "",
+            "shareUrl": "",
+            "likeUrl": "",
+            "room": ["dining"]
+        },
+        {
+            "id": 7,
+            "url": "#",
+            "title": "Pingky",
+            "text": "Cute bed set",
+            "labels": [
+                {
+                    "type": "sale",
+                    "value": "-50%"
+                }
+            ],
+            "image": "07.jpg",
+            "price": "250",
+            "priceOld": "500",
+            "shareUrl": "",
+            "likeUrl": "",
+            "room": ["bedroom"]
+        },
+        {
+            "id": 8,
+            "url": "#",
+            "title": "Potty",
+            "text": "Minimalist flower pot",
+            "labels": [
+                {
+                    "type": "new",
+                    "value": "New"
+                }
+            ],
+            "image": "08.jpg",
+            "price": "80",
+            "priceOld": "",
+            "shareUrl": "",
+            "likeUrl": "",
+            "room": ["living"]
+        },
+        {
+            "id": 9,
+            "url": "#",
+            "title": "Bohauss",
+            "text": "Luxury big sofa 2-seat",
+            "labels": [
+                {
+                    "type": "new",
+                    "value": "New"
+                }
+            ],
+            "image": "09.jpg",
+            "price": "2.000",
+            "priceOld": "",
+            "shareUrl": "",
+            "likeUrl": "",
+            "room": ["living"]
+        },
+        {
+            "id": 10,
+            "url": "#",
+            "title": "Sirius",
+            "text": "Luxury king size bed",
+            "labels": [
+                {
+                    "type": "new",
+                    "value": "New"
+                }
+            ],
+            "image": "10.jpg",
+            "price": "1.145",
+            "priceOld": "",
+            "shareUrl": "",
+            "likeUrl": "",
+            "room": ["bedroom"]
+        },
+        {
+            "id": 11,
+            "url": "#",
+            "title": "Nicola",
+            "text": "Luxury big sofa 2-seat",
+            "labels": [
+                {
+                    "type": "new",
+                    "value": "New"
+                }
+            ],
+            "image": "11.jpg",
+            "price": "1.000",
+            "priceOld": "",
+            "shareUrl": "",
+            "likeUrl": "",
+            "room": ["living"]
+        }
+    ]
+}

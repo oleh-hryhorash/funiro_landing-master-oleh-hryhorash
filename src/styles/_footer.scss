@@ -1,0 +1,202 @@
+.footer {
+    // .footer__body
+    &__body {
+        border-top: 1px solid #d8d8d8;
+        display: grid;
+        grid-template-columns: 250px 1fr 290px;
+        @include adaptiv-value('padding-top', 80, 30, 1);
+        @include adaptiv-value('padding-bottom', 60, 30, 1);
+        @include adaptiv-value('column-gap', 80, 0, 1);
+
+        @media (max-width: #{$md1+px}) {
+            grid-template-rows: auto auto;
+            grid-template-columns: 1fr 290px;
+        }
+        @media (max-width: #{$md2+px}) {
+            display: block;
+        }
+    }
+    // .footer__main
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @media (max-width: #{$md1+px}) {
+            grid-column: span 2;
+            @include adaptiv-value('margin-bottom', 40, 30, 1);
+        }
+    }
+    // .footer__logo
+    &__logo {
+        margin: 0px 0px calc(16px/24px*1em) 0px;
+    }
+    // .footer__text
+    &__text {
+        color: $darkGrayColor;
+        line-height: 150%;
+        &:not(:last-child) {
+            margin: 0px 0px 1em 0px;
+        }
+    }
+    // .footer__contacts
+    // &__contacts {
+    // }
+    // .footer__menu
+    &__menu {
+        @media (max-width: #{$md2+px}) {
+            @include adaptiv-value('margin-bottom', 40, 30, 1);
+        }
+        @media (max-width: #{$md3+px}) {
+            margin-bottom: 0;
+        }
+    }
+    // .footer__subscribe
+    // &__subscribe {
+    // }
+}
+
+.contacts-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    // .contacts-footer__item
+    &__item {
+        display: inline-flex;
+        align-items: center;
+        color: $darkGrayColor;
+        line-height: 150%;
+        transition: color 0.3s ease 0s;
+        &::before {
+           margin: 0px 8px 0px 0px; 
+        }
+        &:not(:last-child) {
+            @include adaptiv-value('margin-bottom', 16, 10, 1);
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                color: $orangeColor;
+            }
+        }
+    }
+}
+
+.menu-footer {
+    @media (min-width: #{$md3+px}) {
+        display: flex;
+    }
+    // .menu-footer__column
+    &__column {
+        @media (min-width: #{$md3+px}) {
+            flex: 0 1 33.333%;
+        }
+        @media (max-width: #{$md3+px}) {
+            margin-bottom: calc(16px/24px*1em);
+        }
+    }
+    // .menu-footer__title
+    &__title {
+        cursor: default;
+        margin: 0px 0px calc(16px/24px*1em) 0px;
+
+        &::before {
+            display: none;
+        }
+
+        &.active {
+            &::before {
+                transform: rotate(-180deg);
+            }
+        }
+
+        @media (max-width: #{$md3+px}) {
+            display: flex;
+            flex-direction: row-reverse;
+            &::before {
+                transition: all 0.3s ease 0s;
+                display: flex;
+                position: relative;
+                top: 8px;
+                font-size: 12px;
+                margin-left: 5px;
+            }
+        }
+    }
+    // .menu-footer__list
+    &__list {
+        position: relative;
+
+        li {
+            &:not(:last-child) {
+                margin: 0px 0px 15px 0px;
+            }
+        }
+        
+        @media (max-width: #{$md3+px}) {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease 0s;
+
+            &.accordion {
+                max-height: 260px;
+                li {
+                    margin: 0px 0px 15px 0px;
+                }
+            }
+        }
+    }
+    // .menu-footer__link
+    &__link {
+        color: $darkGrayColor;
+        transition: color 0.3s ease 0s;
+        line-height: 150%;
+        font-weight: 500;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $orangeColor;
+            }
+        }
+    }
+}
+
+.subscribe {
+    // .subscribe__title
+    &__title {
+        margin: 0px 0px calc(16px/24px*1em) 0px;
+    }
+    // .subscribe__form
+    &__form {
+        display: flex;
+        position: relative;
+        
+        input {
+            width: 100%;
+            background-color: #F4F5F7;
+            padding: 0 12px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #828282;
+        }
+    }
+    // .subscribe__button
+    &__button {
+        flex: 0 0 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        background-color: $orangeColor;
+        color: #fff;
+        margin: 0px 0px 0px 4px;
+        transition: background-color 0.3s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: #f7decd;
+                color: $orangeColor;
+            }
+        }
+    }
+}
